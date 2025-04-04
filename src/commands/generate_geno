@@ -1,0 +1,6 @@
+#!/bin/sh
+# Generate synthetic genotypes
+CURR_DIR=`pwd`
+cd $SCRIPT_DIR
+julia --threads "$1" run_program.jl --genotype --config "$2"
+cd $CURR_DIR

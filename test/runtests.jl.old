@@ -1,0 +1,6 @@
+using SynteticData
+
+
+@testset "generate geno checks" begin
+  @test print("ello word")
+end 

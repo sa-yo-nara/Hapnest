@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run GWAS
+CURR_DIR=`pwd`
+cd $SCRIPT_DIR
+julia integrations/gwas.jl "$@"
+cd $CURR_DIR

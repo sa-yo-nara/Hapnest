@@ -1,0 +1,29 @@
+using Test
+using SynteticData
+
+# Definisci i percorsi dei file di configurazione e degli script
+config_file = joinpath(dirname(@__FILE__), "config_dl_test.yaml")
+threads = "2"  # Numero di thread da utilizzare
+
+@testset "Test generate_geno" begin
+    @testset "Esecuzione corretta dello script" begin
+        # Verifica che l'esecuzione non generi errori
+        @test try
+            SynteticData.generate_geno(threads, config_file)
+            true  # Se non ci sono errori, restituisci true
+        catch
+            false  # Se c'è un'eccezione, restituisci false
+        end
+    end
+
+    @testset "Verifica che il file di output sia creato" begin
+        # Definisci il percorso del file di output atteso
+        output_file = joinpath(dirname(@__FILE__), "output_geno.txt")  # Modifica con il percorso corretto
+
+        # Esegui la funzione per generare i dati
+        SynteticData.generate_geno(threads, config_file)
+
+        # Verifica che il file di output esista
+        @test isfile(output_file)
+    end
+end
