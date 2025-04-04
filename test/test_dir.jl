@@ -11,7 +11,7 @@ include(joinpath(@__DIR__, "..", "src", "run_pheno.jl"))
 @testset "Phenotype Generation Directory Creation" begin
     # Create a temporary directory for testing
         mktempdir() do test_dir 
-        config_path = joinpath("test_config.yaml")
+        config_path = joinpath("..", "test", "test_config.yaml")
        
         # Create mock input files that generate_pheno would expect
         sample_dir = joinpath(test_dir)
