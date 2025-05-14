@@ -1,4 +1,4 @@
-name = "SyntheticData"
+name = "HapSim"
 uuid = "5a22e6b1-9da4-4d8a-9828-7fbb35a05de2"
 keywords = ["hapnest", "genotype"]
 author = ["S. Ahmed, M. Santorsola, F. Lescai"]
