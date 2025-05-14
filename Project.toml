@@ -1,7 +1,7 @@
 name = "SyntheticData"
 uuid = "5a22e6b1-9da4-4d8a-9828-7fbb35a05de2"
 keywords = ["hapnest", "genotype"]
-author = ["frango"]
+author = ["S. Ahmed, M. Santorsola, F. Lescai"]
 version = "0.1.0"
 
 [deps]
