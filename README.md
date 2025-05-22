@@ -21,7 +21,7 @@ To use HapSim you need to install in your environment:
 - mapthin
 - phenoalg
 
-For the comprehensive tool list please check [here] (https://github.com/intervene-EU-H2020/synthetic_data/blob/main/Dockerfile).
+For the comprehensive tool list please check [here](https://github.com/intervene-EU-H2020/synthetic_data/blob/main/Dockerfile).
 
 ## Quickstart tutorial
 
