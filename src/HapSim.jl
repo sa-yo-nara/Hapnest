@@ -1,5 +1,6 @@
 module HapSim
 
+using ArgParse, YAML, Printf
 
 # Algorithms
 include("scripts/env.jl")
@@ -9,6 +10,7 @@ include("scripts/abc.jl")
 include("scripts/genotype_algorithm.jl")
 include("scripts/phenotype_algorithm.jl")
 include("scripts/evaluation.jl")
+
 
 # Functions
 include("fetch.jl")
