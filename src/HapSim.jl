@@ -9,11 +9,10 @@ include("abc.jl")
 include("genotype_algorithm.jl")
 include("phenotype_algorithm.jl")
 include("evaluation.jl")
-
-# Main programs
 include("fetch.jl")
-include("run_geno.jl")
 include("run_pheno.jl")
+include("run_geno.jl")
+
 
 export run_geno, run_pheno, fetch
 

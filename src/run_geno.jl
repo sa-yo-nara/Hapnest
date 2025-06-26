@@ -1,16 +1,5 @@
-using Pkg
+using HapSim
 
-Pkg.add([
-    "ArgParse", "CSV", "CategoricalArrays", "Conda", "DataFrames",
-    "DelimitedFiles", "Distances", "Distributions", "GpABC", "Impute",
-    "LsqFit", "MendelPlots", "Mmap", "Plots", "Printf", "ProgressMeter",
-    "PyCall", "StatsBase", "StatsPlots", "YAML"
-])
-
-using Conda; Conda.pip_interop(true); Conda.pip("install", "bed_reader")
-
-Pkg.instantiate()
-println("All packages installed successfully!")
 function run_geno(threads::String, config_file::String)
     cmd = `julia --threads $threads run_program.jl --genotype --config $config_file`
     run(cmd)
