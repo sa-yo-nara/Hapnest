@@ -1,4 +1,4 @@
-using ArgParse, YAML, Printf
+using Random, ArgParse, YAML, Printf
 
 
 """Executes the program, according to which pipelines and configuration options are specified in the input

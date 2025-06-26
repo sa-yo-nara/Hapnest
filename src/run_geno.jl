@@ -1,4 +1,3 @@
-using HapSim
 
 function run_geno(threads::String, config_file::String)
     cmd = `julia --threads $threads run_program.jl --genotype --config $config_file`

@@ -1,4 +1,3 @@
-using HapSim, Random
 
 function run_pheno(config_file::String)
     cmd = `julia run_program.jl --phenotype --config $config_file`
