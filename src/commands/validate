@@ -1,6 +1,0 @@
-#!/bin/sh
-# Evaluate the synthetic data quality
-CURR_DIR=`pwd`
-cd $SCRIPT_DIR
-julia run_program.jl --evaluation --config "$@"
-cd $CURR_DIR

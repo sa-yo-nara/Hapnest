@@ -1,6 +1,6 @@
 using Printf
 
-include("../utils/parameter_parsing.jl")
+include("parameter_parsing.jl")
 include("utils.jl")
 
 

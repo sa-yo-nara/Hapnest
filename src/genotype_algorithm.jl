@@ -1,6 +1,6 @@
 using Random, Distributions, DataFrames, CSV, StatsBase, ProgressMeter
 
-include("../../utils/parameter_parsing.jl")
+include("parameter_parsing.jl")
 include("write_output.jl")
 
 
